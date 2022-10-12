@@ -58,20 +58,22 @@ int main() {
         cout << "1 - Calculate and insert first function result of results vector" << '\n'
              << "2 - Calculate and insert first function result of results vector" << '\n'
              << "3 - Output vector" << '\n'
-             << "-1 - Exit" << '\n';
-        cout << '\n' << "Enter the operation of number: "; cin >> operationNumber; cout << '\n';
+             << "-1 - Exit" << '\n'
+             << '\n' << "Enter the operation of number: "; cin >> operationNumber; cout << '\n';
         switch (operationNumber) {
             case 1 : {
-                cout << "Enter the first function parameters: " << '\n';
+                cout << "Enter the first function parameters: ";
                 cin >> first >> second >> third >> fourth;
+                cout << '\n';
                 firstClass->parameters(first, second, third, fourth);
                 cout << "Result: " << firstClass->result() << '\n' << '\n';
                 results.push_back(firstClass->result());
                 break;
             }
             case 2 : {
-                cout << "Enter the second function parameters: " << '\n';
+                cout << "Enter the second function parameters: ";
                 cin >> first >> second >> third >> fourth;
+                cout << '\n';
                 secondClass->parameters(first, second, third, fourth);
                 cout << "Result: " << secondClass->result() << '\n' << '\n';
                 results.push_back(secondClass->result());
